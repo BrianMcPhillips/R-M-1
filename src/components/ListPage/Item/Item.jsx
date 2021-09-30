@@ -26,7 +26,7 @@ const Item = ({
 
 Item.propTypes = {
   data: PropTypes.object.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
   name: PropTypes.string,
   image: PropTypes.string,
   status: PropTypes.string,
