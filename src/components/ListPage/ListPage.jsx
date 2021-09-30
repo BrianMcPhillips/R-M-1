@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Item from './Item/Item';
+import styles from './ListPage.module.css';
 
 const URL = process.env.REACT_APP_URL;
 export default class ListPage extends Component {
@@ -16,7 +17,7 @@ export default class ListPage extends Component {
   render() {
     const { characterData } = this.state;
     return (
-      <div>
+      <div className={styles.container}>
         {
           characterData.map(character => 
             <Item key={character.id + character.name} data={character}/>

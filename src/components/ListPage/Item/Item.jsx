@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Item.module.css';
 
 const Item = ({
   data: {
@@ -9,9 +10,9 @@ const Item = ({
     location
   }
 }) => (
-  <div>
+  <div className={styles.card}>
     <img src={image} alt={name} />
-    <div>
+    <div className={styles.info}>
       <h3>{name}</h3>
       <h4>{location.name}</h4>
       <p>{status}</p>
