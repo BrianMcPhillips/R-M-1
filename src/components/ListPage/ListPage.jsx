@@ -14,6 +14,7 @@ export default class ListPage extends Component {
       .then(res => res.json())
       .then(characters => this.setState({ characterData: characters.results }));
   }
+
   render() {
     const { characterData } = this.state;
     return (

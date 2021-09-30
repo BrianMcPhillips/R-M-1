@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Item.module.css';
+import { Link } from 'react-router-dom';
 
 const Item = ({
   data: {
+    id,
     name,
     image,
     status,
@@ -11,7 +13,9 @@ const Item = ({
   }
 }) => (
   <div className={styles.card}>
-    <img src={image} alt={name} />
+    <Link to={`/detail/${id}`}>
+      <img src={image} alt={name} />
+    </Link>
     <div className={styles.info}>
       <h3>{name}</h3>
       <h4>{location.name}</h4>
@@ -22,6 +26,7 @@ const Item = ({
 
 Item.propTypes = {
   data: PropTypes.object.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string,
   image: PropTypes.string,
   status: PropTypes.string,

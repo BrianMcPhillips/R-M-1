@@ -1,6 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class DetailPage extends Component {
+  state = {
+    characterData: {}
+  }
+
+  componentDidMount = () => {
+
+  }
+
   render() {
     return (
       <div>
