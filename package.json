@@ -1,5 +1,5 @@
 {
-  "name": "Rick & Morty",
+  "name": "Rick-Morty",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -24,7 +24,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

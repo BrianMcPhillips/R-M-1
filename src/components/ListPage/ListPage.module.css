@@ -1,0 +1,7 @@
+.container {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
